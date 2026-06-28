@@ -54,10 +54,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* 3단 레이아웃 */
+/* 2단 레이아웃 */
 .app-container {
   display: grid;
-  grid-template-columns: 260px 1fr 300px;
+  grid-template-columns: 260px 1fr;
   height: 100vh;
   overflow: hidden;
 }

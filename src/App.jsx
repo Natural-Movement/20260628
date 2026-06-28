@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import Feed from './components/Feed';
-import NoticeSide from './components/NoticeSide';
 import QuestionModal from './components/QuestionModal';
 import WriteQuestionModal from './components/WriteQuestionModal';
 import { mockQuestions, mockComments, MOCK_USER } from './mockData';
@@ -76,7 +75,6 @@ function App() {
         onOpenWriteModal={() => setIsWriteModalOpen(true)}
         onOpenQuestion={(q) => setSelectedQuestion(q)}
       />
-      <NoticeSide />
 
       {/* 새 질문 작성 팝업 */}
       {isWriteModalOpen && (
